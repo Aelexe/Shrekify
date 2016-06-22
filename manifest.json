@@ -1,0 +1,78 @@
+{
+	"description": "Adds more Shrek in your life. Randomly replaces a single image on 1% of pages with an image of Shrek.",
+	"manifest_version": 2,
+	"name": "Shrekify",
+	"version": "1.0",
+	"applications": {
+		"gecko": {
+			"id": "shrekify@code-moon.com"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"libs/jquery-3.0.0.min.js",
+				"src/shrekify.js"
+			],
+			"run_at": "document_start"
+		}
+	],
+	"icons": {
+		"48": "src/images/icon48.png"
+	},
+	"web_accessible_resources": [
+		"src/images/1/shrek1.png",
+		"src/images/1/shrek2.png",
+		"src/images/1/shrek3.png",
+		"src/images/1/shrek4.png",
+		"src/images/1/shrek5.png",
+		"src/images/1/shrek6.png",
+		"src/images/1/shrek7.png",
+		"src/images/1/shrek8.png",
+		"src/images/1/shrek9.png",
+		"src/images/1/shrek10.png",
+		"src/images/1.3/shrek1.png",
+		"src/images/1.3/shrek2.png",
+		"src/images/1.3/shrek3.png",
+		"src/images/1.3/shrek4.png",
+		"src/images/1.3/shrek5.png",
+		"src/images/1.3/shrek6.png",
+		"src/images/1.3/shrek7.png",
+		"src/images/1.3/shrek8.png",
+		"src/images/1.3/shrek9.png",
+		"src/images/1.3/shrek10.png",
+		"src/images/1.5/shrek1.png",
+		"src/images/1.5/shrek2.png",
+		"src/images/1.5/shrek3.png",
+		"src/images/1.5/shrek4.png",
+		"src/images/1.5/shrek5.png",
+		"src/images/1.5/shrek6.png",
+		"src/images/1.5/shrek7.png",
+		"src/images/1.5/shrek8.png",
+		"src/images/1.5/shrek9.png",
+		"src/images/1.5/shrek10.png",
+		"src/images/1.7/shrek1.png",
+		"src/images/1.7/shrek2.png",
+		"src/images/1.7/shrek3.png",
+		"src/images/1.7/shrek4.png",
+		"src/images/1.7/shrek5.png",
+		"src/images/1.7/shrek6.png",
+		"src/images/1.7/shrek7.png",
+		"src/images/1.7/shrek8.png",
+		"src/images/1.7/shrek9.png",
+		"src/images/1.7/shrek10.png",
+		"src/images/1.9/shrek1.png",
+		"src/images/1.9/shrek2.png",
+		"src/images/1.9/shrek3.png",
+		"src/images/1.9/shrek4.png",
+		"src/images/1.9/shrek5.png",
+		"src/images/1.9/shrek6.png",
+		"src/images/1.9/shrek7.png",
+		"src/images/1.9/shrek8.png",
+		"src/images/1.9/shrek9.png",
+		"src/images/1.9/shrek10.png"
+	]
+}
